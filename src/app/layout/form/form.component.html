@@ -1,0 +1,52 @@
+<div [@routerTransition]>
+    <app-page-header [heading]="'Create Video'" [icon]="'fa-edit'"></app-page-header>
+
+    <div class="row">
+        <div class="col-lg-6">
+
+            <form>
+
+
+                <fieldset class="form-group">
+                    <label>Video Name</label>
+                    <input type="text" class="form-control" [ngModelOptions]="{standalone: true}" [(ngModel)]="document.Name">
+                </fieldset>
+                <fieldset class="form-group">
+                    <label>Description</label>
+                    <textarea type="textarea" [ngModelOptions]="{standalone: true}" class="form-control" rows="3" [(ngModel)]="document.Description"></textarea>
+                </fieldset>
+                <!-- <fieldset class="form-group">
+                    <label for="exampleInputFile"></label>
+                    <input type="label" type="file" class="form-control-file" (change)="showPreviewImage($event)" id="exampleInputFile">
+                </fieldset> -->
+                <fieldset>
+                    <div class="card">
+                        <h5 class="card-header">Upload your video here to
+                            <small>Bytcom Blockchain</small>
+                        </h5>
+                        <div class="card-body">
+
+                            <input type="file" name="files[]" id="js-upload-files" multiple>
+
+
+                            <a href="#" class="btn btn-primary">Upload</a>
+                            <p></p>
+
+                           
+                        </div>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Enter your Bytcom Address">
+                    <p></p>
+                    <input class="form-control" type="text" placeholder="Enter Tags here">
+                </fieldset>
+                <div class="col-lg-6" style="top:20px">
+                    <button type="submit" class="form-control" class="btn btn-primary" (click)="UploadDocument()">Submit</button>
+                    <button type="reset" class="form-control" style="margin-left: 15px" class="btn btn-secondary">Reset</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+</div>

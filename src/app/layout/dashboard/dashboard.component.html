@@ -1,0 +1,35 @@
+<div class="container">
+
+    <div class="row">
+        <div class="gallery col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <h1 class="gallery-title">Video Summary/Gallery</h1>
+        </div>
+    </div>
+    <div class="row">
+        <input class="form-control" type="text" placeholder="Search" aria-label="Search">
+    </div>
+    <div style="margin-top: 20px">
+        <div class="row">
+            <section *ngFor="let video of VideoList">
+                <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter hdpe">
+                    <iframe src="https://www.youtube.com/embed/S0gfg1Nm9GU" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                </div>
+            </section>
+            <section *ngFor="let video of VideoList">
+                <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter hdpe">
+                    <iframe src="https://www.youtube.com/embed/EHAI_LDNhi4" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                </div>
+            </section>
+            <section *ngFor="let video of VideoList">
+                <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter hdpe">
+                    <iframe src="https://www.youtube.com/embed/iHhcHTlGtRs" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                </div>
+            </section>
+            <section *ngFor="let video of VideoList">
+                <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter hdpe">
+                    <iframe src="https://www.youtube.com/embed/tSdBqsvNn4" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                </div>
+            </section>
+        </div>
+        
+

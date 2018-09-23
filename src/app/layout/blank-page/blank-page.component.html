@@ -1,0 +1,13 @@
+<h1><b>Video Content summary</b></h1>
+
+<div style="width:80%; height:500px;" #container>
+    <ngx-y2-player
+      #video
+      [playerOptions]="playerOptions"
+      [container]="container"
+      (ready)="onReady($event)"
+      (change)="onStateChange($event)"
+      >
+    </ngx-y2-player>
+  </div>
+  
